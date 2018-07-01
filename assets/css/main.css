@@ -1812,7 +1812,7 @@ ul.icons {
   -ms-justify-content: center;
   justify-content: center;
   background-image: url("../../images/banner.jpg");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 0;
@@ -1964,14 +1964,18 @@ ul.icons {
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    padding: 20px;
+    background: rgba(0,0,0,.5);
+  }
     #banner > .inner > :last-child {
       margin-bottom: 0; }
   #banner h1 {
     font-size: 4rem;
     margin-bottom: 1rem; }
   #banner p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: white; }
   #banner a {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none; }
@@ -1990,37 +1994,6 @@ ul.icons {
     position: absolute;
     right: 50%;
     width: auto; }
-  #banner:before {
-    -moz-transition: opacity 3s ease;
-    -webkit-transition: opacity 3s ease;
-    -ms-transition: opacity 3s ease;
-    transition: opacity 3s ease;
-    -moz-transition-delay: 1.25s;
-    -webkit-transition-delay: 1.25s;
-    -ms-transition-delay: 1.25s;
-    transition-delay: 1.25s;
-    background: #111111;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0.45;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1; }
-  #banner:after {
-    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-    content: ' ';
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    webkit-linear-gradientidth: 100%;
-    width: 100%;
-    z-index: 1; }
   #banner.small {
     height: 30vh !important;
     min-height: 30vh; }
